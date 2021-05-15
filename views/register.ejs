@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Register</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css    ">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+
+<body class="bg-secondary">
+
+  <h3 class="text-center my-5 text-light">Đăng ký tài khoản</h3>
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-10 col-lg-8 col-xl-5">
+        <div class="border p-3 rounded bg-light">
+          <form method="POST">
+            <div class="form-group">
+              <label for="user">Tên văn phòng/khoa</label>
+              <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text">
+                    <i class="fas fa-user"></i>
+                  </span>
+                </div>
+                <input value="<%= name %>" id="name" name="name" type="text" class="form-control" placeholder="Tên văn phòng/khoa">
+              </div>
+
+            <div class="form-group">
+              <label for="user">Email</label>
+              <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text">
+                    <i class="fas fa-user"></i>
+                  </span>
+                </div>
+                <input value="<%= email %>" id="email" name="email" type="text" class="form-control" placeholder="Email">
+              </div>
+
+            </div>
+            <div class="form-group">
+              <label for="pass">Mật khẩu</label>
+              <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text">
+                    <i class="fas fa-lock"></i>
+                  </span>
+                </div>
+                <input value="<%= password %>" name="password" type="password" class="form-control" placeholder="Mật khẩu">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="pass">Xác thực mật khẩu</label>
+              <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text">
+                    <i class="fas fa-lock"></i>
+                  </span>
+                </div>
+                <input name="rePassword" type="password" class="form-control" placeholder="Mật khẩu">
+              </div>
+            </div>
+            <div class="form-group">
+              <div>
+                <label for="permission">Quyền</label>
+              </div>
+              <input type="checkbox" id="CTHSSV" name="FAC" value="CTHSSV">
+              <label class="quyen" for="CTHSSV">Phòng Công tác học sinh, sinh viên </label>
+              <input type="checkbox" id="PDH" name="FAC" value="PDH">
+              <label class="quyen" for="PDH">Phòng Đại học</label><br>
+              <input type="checkbox" id="PSDH" name="FAC" value="PSDH">
+              <label class="quyen" for="PSDH">Phòng Sau Đại học </label>
+              <input type="checkbox" id="PDTVMT" name="FAC" value="PDTVMT">
+              <label class="quyen" for="PDTVMT">Phòng điện toán và máy tính</label><br>
+              <input type="checkbox" id="PKTVKDCL" name="FAC" value="PKTVKDCL">
+              <label class="quyen" for="PKTVKDCL">Phòng khảo thí và kiểm định chất lượng</label><br>
+              <input type="checkbox" id="PTC" name="FAC" value="PTC">
+              <label class="quyen" for="PTC">Phòng tài chính</label>
+              <input type="checkbox" id="CLC" name="FAC" value="CLC">
+              <label class="quyen" for="CLC">TDT Creative Language Center</label><br>
+              <input type="checkbox" id="TTTH" name="FAC" value="TTTH">
+              <label for="TTTH">Trung tâm tin học</label><br>
+              <input type="checkbox" id="SDTC" name="FAC" value="SDTC">
+              <label for="SDTC">TT đào tạo phát triển xã hội (SDTC)</label><br>
+              <input type="checkbox" id="ATEM" name="FAC" value="ATEM">
+              <label for="ATEM">TT phát triển KHQL và UDCN (ATEM)</label><br>
+              <input type="checkbox" id="TTHTDNVCSV" name="FAC" value="TTHTDNVCSV">
+              <label for="TTHTDNVCSV">TT hợp tác doanh nghiệp và cựu sinh viên</label>
+              <input type="checkbox" id="KL" name="FAC" value="KL">
+              <label for="KL">Khoa Luật</label>
+              <input type="checkbox" id="TTNG" name="FAC" value="TTNG">
+              <label for="TTNG">TT ngoại ngữ - tin học – bồi dưỡng văn hóa</label><br>
+              <input type="checkbox" id="VCSKTVKD" name="FAC" value="VCSKTVKD">
+              <label for="VCSKTVKD">Viện chính sách kinh tế và kinh doanh</label><br>
+              <input type="checkbox" id="KMTCN" name="FAC" value="KMTCN">
+              <label for="MTCN">Khoa Mỹ thuật công nghiệp</label>
+              <input type="checkbox" id="DDT" name="FAC" value="DDT">
+              <label for="DDT">Khoa Điện – Điện tử</label><br>
+              <input type="checkbox" id="CNTT" name="FAC" value="CNTT">
+              <label for="CNTT">Khoa Công nghệ thông tin</label>
+              <input type="checkbox" id="QTKD" name="FAC" value="QTKD">
+              <label for="QTKD">Khoa Quản trị kinh doanh</label>
+              <input type="checkbox" id="MTVBHLD" name="FAC" value="MTVBHLD">
+              <label for="MTVBHLD">Khoa Môi trường và bảo hộ lao động</label><br>
+              <input type="checkbox" id="LDCD" name="FAC" value="LDCD">
+              <label for="LDCD">Khoa Lao động công đoàn</label>
+              <input type="checkbox" id="TCNH" name="FAC" value="TCNH">
+              <label for="TCNH">Khoa Tài chính ngân hàng</label>
+              <input type="checkbox" id="GDQT" name="FAC" value="GDQT">
+              <label for="GDQT">Khoa giáo dục quốc tế</label>
+            </div>
+            <div class="form-group">
+              <% if(error.length > 0) { %>
+                <div class="alert alert-danger alert-dismissible fade show">
+                  <button type="button" class="close" data-dismiss="alert">&times;</button>
+                  <%= error %>
+                </div>
+              <% } %>
+            </div>
+
+            <div class="form-group">
+              <button class="btn btn-success px-5" type="submit">Đăng ký</button>
+              <a href="/admin" class="btn btn-secondary px-5 active" role="button" aria-pressed="true">Trở lại</a>
+            </div>
+            <div class="form-group">
+              <p>Bạn đã có tài khoản? <a href="/logout">Đăng nhập ngay bây giờ!</a></p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+</body>
+
+</html>
